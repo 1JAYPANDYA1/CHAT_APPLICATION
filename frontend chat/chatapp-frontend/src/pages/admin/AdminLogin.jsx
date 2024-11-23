@@ -11,6 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
 import { bgGradient } from "../../constants/color";
 import { adminLogin, getAdmin } from "../../redux/thunks/admin";
+import { blue } from "@mui/material/colors";
 
 const AdminLogin = () => {
   const { isAdmin } = useSelector((state) => state.auth);
@@ -33,7 +34,7 @@ const AdminLogin = () => {
   return (
     <div
       style={{
-        backgroundImage: bgGradient,
+        backgroundColor: blue[100],
       }}
     >
       <Container

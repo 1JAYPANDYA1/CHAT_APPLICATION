@@ -36,6 +36,8 @@ import {
   useRenameGroupMutation,
 } from "../redux/api/api";
 import { setIsAddMember } from "../redux/reducers/misc";
+import { blue } from "@mui/material/colors";
+
 
 const ConfirmDeleteDialog = lazy(() =>
   import("../components/dialogs/ConfirmDeleteDialog")
@@ -187,6 +189,7 @@ const Groups = () => {
             left: "2rem",
             bgcolor: matBlack,
             color: "white",
+            
             ":hover": {
               bgcolor: "rgba(0,0,0,0.7)",
             },
@@ -385,7 +388,7 @@ const GroupsList = ({ w = "100%", myGroups = [], chatId }) => (
   <Stack
     width={w}
     sx={{
-      backgroundImage: bgGradient,
+      bgcolor:blue[100],
       height: "100vh",
       overflow: "auto",
     }}

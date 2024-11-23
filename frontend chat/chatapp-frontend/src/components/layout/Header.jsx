@@ -136,12 +136,7 @@ const Header = () => {
                 onClick={openNotification}
                 value={notificationCount}
               />
-              <IconBtn
-                title={"Profile"}
-                icon={<Person />}
-                onClick={openProfile}
-                value={notificationCount}
-              />
+            
 
               <IconBtn
                 title={"Logout"}

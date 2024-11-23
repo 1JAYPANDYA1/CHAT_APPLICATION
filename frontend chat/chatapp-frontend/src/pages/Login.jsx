@@ -15,7 +15,9 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { VisuallyHiddenInput } from "../components/styles/StyledComponents";
-import { bgGradient } from "../constants/color";
+import { bgGradient} from "../constants/color";
+import { blue } from "@mui/material/colors";
+
 import { server } from "../constants/config";
 import { userExists } from "../redux/reducers/auth";
 import { usernameValidator } from "../utils/validators";
@@ -113,7 +115,7 @@ const Login = () => {
   return (
     <div
       style={{
-        backgroundImage: bgGradient,
+        backgroundColor:blue[100],
       }}
     >
       <Container
